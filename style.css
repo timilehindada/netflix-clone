@@ -189,11 +189,14 @@ footer p{
     .sixth-page .faqSection h2{
         font-size: 1.5rem;
     }
-    .faqSection .faq.open .answer{
-        height: 250px;
-    }
     footer{
         padding: 25px 30px;
+    }
+    .faqSection .faq .answer{
+        overflow-y: scroll;
+    }
+    .faqSection .faq.open .answer{
+        height: 70px;
     }
 }
 
