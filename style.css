@@ -66,33 +66,15 @@ body{
     align-items: center;
     padding: 20px 150px;
 }
-.second-page .words h2{
-    font-size: 2.5rem;
-}
-.second-page .words p{
-    font-size: 1.2rem;
-}
 .third-page{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px 150px;
 }
-.third-page .words h2{
-    font-size: 2.5rem;
-}
-.third-page .words p{
-    font-size: 1.2rem;
-}
 .fourth-page{
     display: flex;
     padding: 50px 150px;
-}
-.fourth-page .words h2{
-    font-size: 2.5rem;
-}
-.fourth-page .words p{
-    font-size: 1.2rem;
 }
 .fifth-page{
     display: flex;
@@ -100,11 +82,11 @@ body{
     align-items: center;
     padding: 50px 150px;
 }
-.fifth-page .words h2{
-    font-size: 2.5rem;
-}
-.fifth-page .words p{
+.words p{
     font-size: 1.2rem;
+}
+.words h2{
+    font-size: 2.5rem;
 }
 .sixth-page{
     padding: 50px 150px;
@@ -119,12 +101,13 @@ body{
     cursor: pointer;
     background-color: #808080;
     font-size: 1.5rem; 
+    position: relative;
 }
 .faqSection .faq .questions::after{
     content: '+';
     font-weight: 700;
     position: absolute;
-    right: 170px;
+    right: 20px;
 }
 .faqSection .faq .answer{
     line-height: 1.5;
@@ -141,7 +124,7 @@ body{
     content: '-';
     font-weight: 700;
     position: absolute;
-    right: 170px;
+    right: 20px;
 }
 .sixth-page p, .mail{
     margin: 20px 0;
@@ -173,6 +156,45 @@ a{
 }
 footer p{
     color: #808080;
+}
+
+/*Responsive Design*/
+@media screen and (max-width: 375px){
+    .header{
+    padding: 20px 10px;
+    }
+    .mail{
+        display: grid;
+        justify-items: center;
+    }
+    .mail input{
+        width: 70vw;
+    }
+    .mail button{
+        width: 30vw;
+        margin-top: 20px;
+    }
+    .second-page, .third-page, .fourth-page, .fifth-page{
+        display: grid;
+        justify-items: center;
+        text-align: center;
+        padding: 0 15px;
+    }
+    .words p{
+        font-size: 1rem;
+    }
+    .sixth-page{
+        padding: 25px 30px;
+    }
+    .sixth-page .faqSection h2{
+        font-size: 1.5rem;
+    }
+    .faqSection .faq.open .answer{
+        height: 250px;
+    }
+    footer{
+        padding: 25px 30px;
+    }
 }
 
 
